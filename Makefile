@@ -1,6 +1,6 @@
 
 
-TARGET=Assignment_07
+TARGET=Assignment_08
 
 CSRCS= $(TARGET).c
 CSRCS+= 
