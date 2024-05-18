@@ -14,13 +14,13 @@ int main(){
 	ret = pipe(arr2);
 	if(ret<0){
 		perror("pipe failed");
-		_exit(1);
+		_exit(2);
 
 	}
 	ret = fork();
 	if(ret<0){
 		perror("fork failed");
-		_exit(1);
+		_exit(3);
 
 	}
 	if(ret==0){
@@ -51,10 +51,5 @@ int main(){
 		waitpid(-1,&s,0);
 		
 	}
-	printf("bye\n");
 	return 0;
-
-
-
-
 }
